@@ -50,9 +50,6 @@ body {
     color: var(--text-light); /* Or any specific color you want */
 }
 
-.header-container h1 {
-    margin: 0;
-}
 
 nav ul {
     margin: 0;
