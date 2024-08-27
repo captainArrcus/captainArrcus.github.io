@@ -1,20 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap');
 
 :root {
-    --primary-color: #00a86b;
-    --secondary-color: #ffd700;
-    --accent-color: #ff6b6b;
-    --background-color: #f0f8ff;
-    --text-color: #333333;
+    --background: rgb(253, 246, 227);
+    --accent: rgb(181, 137, 0);
+    --primary: rgb(42, 161, 152);
+    --text-dark: rgb(101, 123, 131);
+    --text-light: rgb(253, 246, 227);
+    --secondary: rgb(38, 139, 210);
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
+    color: var(--text-dark);
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
+    background-color: var(--background);
 }
 
 .container {
@@ -25,35 +26,35 @@ body {
 }
 
 header {
-    background: var(--primary-color);
-    color: white;
+    background: var(--primary);
+    color: var(--text-light);
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: var(--secondary-color) 3px solid;
+    border-bottom: var(--accent) 3px solid;
 }
 
 header a {
-    color: #ffffff;
+    color: var(--text-light);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
 }
 
 header .highlight, header .current a {
-    color: var(--secondary-color);
+    color: var(--accent);
     font-weight: bold;
 }
 
 header a:hover {
-    color: var(--accent-color);
+    color: var(--background);
     font-weight: bold;
 }
 
 #showcase {
     min-height: 400px;
-    background: linear-gradient(rgba(0, 168, 107, 0.7), rgba(0, 168, 107, 0.7)), url('/api/placeholder/1200/400') no-repeat center center/cover;
+    background: linear-gradient(rgba(42, 161, 152, 0.8), rgba(42, 161, 152, 0.8)), url('/api/placeholder/1200/400') no-repeat center center/cover;
     text-align: center;
-    color: #ffffff;
+    color: var(--text-light);
 }
 
 #showcase h1 {
@@ -69,8 +70,8 @@ header a:hover {
 .button {
     display: inline-block;
     font-size: 18px;
-    color: var(--primary-color);
-    background: var(--secondary-color);
+    color: var(--text-light);
+    background: var(--accent);
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -80,8 +81,8 @@ header a:hover {
 }
 
 .button:hover {
-    background-color: var(--accent-color);
-    color: #ffffff;
+    background-color: var(--secondary);
+    color: var(--text-light);
 }
 
 #boxes {
@@ -97,26 +98,26 @@ header a:hover {
 
 .section {
     padding: 20px 0;
-    background: #ffffff;
+    background: rgba(253, 246, 227, 0.7);
     margin: 20px 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(42, 161, 152, 0.1);
     border-radius: 10px;
 }
 
 .section h2 {
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .talk, .workshop {
     margin-bottom: 20px;
     padding: 10px;
-    background: #f9f9f9;
-    border-left: 5px solid var(--accent-color);
+    background: rgba(253, 246, 227, 0.9);
+    border-left: 5px solid var(--accent);
 }
 
 #prize {
-    background: var(--secondary-color);
-    color: var(--primary-color);
+    background: var(--accent);
+    color: var(--text-light);
     padding: 20px;
     text-align: center;
     margin-top: 20px;
@@ -126,15 +127,15 @@ header a:hover {
 footer {
     padding: 20px;
     margin-top: 20px;
-    color: #ffffff;
-    background-color: var(--primary-color);
+    color: var(--text-light);
+    background-color: var(--primary);
     text-align: center;
 }
 
 /* Solar punk inspired icons */
 .icon-leaf, .icon-globe, .icon-sprout {
     font-size: 48px;
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .icon-leaf::before {
