@@ -9,22 +9,6 @@
     --secondary: rgb(38, 139, 210);
 }
 
-nav ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    margin-right: 20px; /* Adjust the spacing as needed */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000; /* Adjust the color as needed */
-}
-
 body {
     font-family: 'Space Grotesk', sans-serif;
     line-height: 1.6;
@@ -41,27 +25,13 @@ body {
     padding: 20px;
 }
 
-.header-container h1 {
-    margin: 0;
-    white-space: nowrap;
-}
-
-.site-name {
-    color: var(--text-light); /* Or any specific color you want */
-}
-
-
-nav ul {
-    margin: 0;
-}
-
-
 header {
     background: var(--primary);
     color: var(--text-light);
     padding-top: 30px;
     min-height: 70px;
     border-bottom: var(--accent) 3px solid;
+    padding-bottom: 20px; /* Adjust to provide spacing between header items */
 }
 
 header a {
@@ -79,6 +49,39 @@ header .highlight, header .current a {
 header a:hover {
     color: var(--background);
     font-weight: bold;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent flex items from wrapping */
+}
+
+.header-container h1 {
+    margin: 0;
+    white-space: nowrap; /* Prevent text from breaking into two lines */
+    color: var(--text-light); /* Ensure the color remains the same */
+}
+
+.site-name {
+    color: var(--accent); /* Restore the color for the site name */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px; /* Adjust the spacing as needed */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; /* Adjust the color as needed */
 }
 
 #showcase {
