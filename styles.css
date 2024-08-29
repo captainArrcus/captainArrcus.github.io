@@ -222,4 +222,219 @@ footer {
     padding: 20px 0;
     background-color: var(--secondary-color);
     color: white;
+}/* Enable Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Solar Punk Color Theme */
+:root {
+    --bg-color: #FDF6E3;
+    --primary-color: #2AA199; /* Main, Cooler Accent */
+    --secondary-color: #B58900; /* Secondary, Warmer Accent */
+    --text-color: #586e75; /* For general paragraphs */
+    --text-alt-color: #fdf6e3; /* Alternate text color for better contrast */
+}
+
+/* Basic Reset */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Navigation Header */
+nav {
+    background-color: var(--secondary-color); /* Warm Gold Background */
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+header {
+    text-align: center;
+    padding: 30px 0;
+    color: var(--secondary-color);
+}
+
+/* Round Speaker Image */
+.speaker-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.speaker-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image round */
+    border: 5px solid var(--primary-color);
+    object-fit: cover;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Rounded Section Containers */
+.section-content {
+    border-radius: 20px;
+    padding: 30px;
+}
+
+/* Alternating Text Alignment */
+.left-aligned {
+    text-align: left;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+/* Organic Themed Sections */
+.themes-topics {
+    background-color: var(--primary-color); /* Cool Teal Background */
+    padding: 60px 20px;
+    color: var(--text-alt-color); /* Use alternate text color */
+}
+
+.themes-talks {
+    background-color: var(--secondary-color); /* Warm Gold Background */
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    color: var(--text-alt-color); /* Use alternate text color */
+}
+
+.themes-workshops {
+    background-color: var(--primary-color); /* Cool Teal Background */
+    padding: 60px 20px;
+    color: var(--text-alt-color); /* Use alternate text color */
+}
+
+.themes-recognition {
+    background-color: var(--secondary-color); /* Warm Gold Background */
+    padding: 60px 20px;
+    color: var(--text-alt-color); /* Use alternate text color */
+}
+
+.themes-contact {
+    background-color: var(--primary-color); /* Cool Teal Background */
+    padding: 60px 20px;
+    color: var(--text-alt-color); /* Use alternate text color */
+}
+
+/* Content Compartment Styling */
+.content h2 {
+    font-size: 2.5em;
+    color: inherit;
+    margin-bottom: 30px;
+}
+
+.section-content p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    line-height: 1.7;
+}
+
+.section-content strong {
+    font-weight: bold;
+    color: inherit;
+}
+
+/* Video Container and Overlay in Talks Section */
+.section-outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.section-inner {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.video-container {
+    flex: 1;
+}
+
+.video-overlay {
+    position: relative;
+    max-width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-overlay img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    border-radius: 20px;
+}
+
+.video-overlay:hover iframe,
+.video-overlay:focus iframe {
+    opacity: 1;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--secondary-color);
+    color: white;
 }
