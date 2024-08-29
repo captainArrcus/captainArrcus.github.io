@@ -1,61 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcus Röper - AI Expert & Innovator</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+    <style>
+        /* Solar Punk Color Theme */
+        :root {
+            --bg-color: #fdf6e3;
+            --primary-color: #b58900;
+            --accent-color: #2aa199;
+            --text-color: #586e75;
+            --secondary-text-color: #073642;
+        }
+
+        /* Basic Reset */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: url('solarpunk-background.jpg') no-repeat center center/cover;
+            color: var(--primary-color);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Content Compartment Styling */
+        .content {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .compartment {
+            margin-bottom: 40px;
+        }
+
+        .item-box {
+            background: var(--accent-color);
+            border-radius: 8px;
+            padding: 20px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .compartment h3 {
+            font-size: 1.5em;
+            color: var(--bg-color);
+        }
+
+        .compartment p {
+            margin-top: 10px;
+            color: var(--bg-color);
+        }
+
+        /* Prize Compartment */
+        .prize-box {
+            background: white;
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .prize-box h3 {
+            font-size: 1.5em;
+            color: var(--accent-color);
+        }
+
+        .prize-box p {
+            margin-top: 10px;
+            color: var(--secondary-text-color);
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
 
-    <div class="header">
+    <!-- Header Section -->
+    <header>
         <h1>Marcus Röper</h1>
-        <p>AI Expert & Innovator</p>
-    </div>
+        <p>AI Expert | Innovator | Visionary of Sustainable Tech</p>
+    </header>
 
-    <div class="main-content">
-        <div class="section">
-            <h2>Topics</h2>
-            <p>Explore the cutting-edge work of Marcus Röper in the domains of:</p>
-            <ul>
-                <li>LLM-Agents</li>
-                <li>Quantum Machine Learning</li>
-                <li>Sustainable and Green Tech</li>
-                <li>Embedded AI</li>
-                <li>Solar Punk Technology</li>
-            </ul>
+    <!-- Topics Section -->
+    <section class="content compartment">
+        <h2>Topics</h2>
+        <div class="item-box">
+            <h3>LLM-Agents</h3>
+            <p>Harnessing the power of Large Language Models to build autonomous, intelligent systems.</p>
         </div>
-
-        <div class="section">
-            <h2>Talks</h2>
-            <p>Marcus is a seasoned speaker who has delivered keynote sessions on</p>
-            <ul>
-                <li>Reimaging AI Through Solar Punk</li>
-                <li>Quantum Leap: The Future of Machine Learning</li>
-                <li>Sustainability with AI</li>
-            </ul>
+        <div class="item-box">
+            <h3>Quantum Machine Learning</h3>
+            <p>The fusion of quantum computing and machine learning to solve complex, next-generation problems.</p>
         </div>
-
-        <div class="section">
-            <h2>Workshops</h2>
-            <p>Join a hands-on experience with Marcus to grasp the following:</p>
-            <ul>
-                <li>Designing LLM-Agents</li>
-                <li>Implementing Green Solutions in AI</li>
-                <li>Basics of Quantum Machine Learning</li>
-            </ul>
+        <div class="item-box">
+            <h3>Sustainable and Green Tech</h3>
+            <p>Pioneering innovative technologies that prioritize environmental sustainability.</p>
         </div>
-
-        <div class="section">
-            <h2>Solar Punk Vision</h2>
-            <p>Solar Punk is a movement that envisions a future built around sustainable tech and bio-adaptive AI. Marcus is at the forefront of incorporating these values into actionable AI Solutions.</p>
+        <div class="item-box">
+            <h3>Embedded AI</h3>
+            <p>Integrating artificial intelligence into hardware to create fast and efficient systems.</p>
         </div>
-    </div>
+        <div class="item-box">
+            <h3>Solar Punk</h3>
+            <p>Creating a brighter, greener tomorrow by merging futuristic technologies with ecological mindfulness.</p>
+        </div>
+    </section>
 
-    <div class="award-section">
-        <h2>Award</h2>
-        <p>Winner of the 2023 Green Tech Innovator Award</p>
-        <p>For advancing AI solutions that work in harmony with nature.</p>
-    </div>
+    <!-- Talks Section -->
+    <section class="content compartment">
+        <h2>Talks</h2>
+        <div class="item-box">
+            <h3>Beyond the Algorithms: AI's Role in Sustainable Development</h3>
+            <p>Delve into the impact of AI on global sustainability efforts.</p>
+        </div>
+        <div class="item-box">
+            <h3>Quantum Computing and Its Role in Future Tech</h3>
+            <p>Exploring the intersections of quantum computing and machine learning.</p>
+        </div>
+        <div class="item-box">
+            <h3>Thinking Green: AI Solutions For a Sustainable World</h3>
+            <p>How AI can be a powerful ally in the fight against climate change.</p>
+        </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section class="content compartment">
+        <h2>Workshops</h2>
+        <div class="item-box">
+            <h3>Building LLM-Agents From Scratch</h3>
+            <p>Hands-on workshop to create and optimize AI agents using large language models.</p>
+        </div>
+        <div class="item-box">
+            <h3>Quantum Machine Learning 101</h3>
+            <p>A beginner’s guide to understanding and applying quantum machine learning techniques.</p>
+        </div>
+        <div class="item-box">
+            <h3>Greentech AI Solutions Lab</h3>
+            <p>Collaborative lab to develop sustainable AI technologies for real-world applications.</p>
+        </div>
+    </section>
+
+    <!-- Prize Section -->
+    <section class="content compartment">
+        <h2>Recognition</h2>
+        <div class="prize-box">
+            <h3>Winner of the 2022 Solar Punk Innovations Award</h3>
+            <p>For outstanding contributions to the field of sustainable AI and green technology.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2023 Marcus Röper | AI Expert & Innovator | All Rights Reserved</p>
+    </footer>
+
 </body>
+
 </html>
