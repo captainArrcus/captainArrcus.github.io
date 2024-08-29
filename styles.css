@@ -1,3 +1,8 @@
+/* Enable Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Solar Punk Color Theme */
 :root {
     --bg-color: #fdf6e3;
