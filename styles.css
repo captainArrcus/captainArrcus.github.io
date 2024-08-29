@@ -6,12 +6,9 @@ html {
 /* Solar Punk Color Theme */
 :root {
     --bg-color: #FDF6E3;
-    --primary-color: #2AA199;
-    --secondary-color: #B58900;
-    --text-color: #586e75;
-    --light-color: #FAF3E2;
-    --dark-color: #00695C;
-    --section-color: #B58900;
+    --primary-color: #2AA199; /* Main, Cooler Accent */
+    --secondary-color: #B58900; /* Secondary, Warmer Accent */
+    --text-color: #586e75; /* For general paragraphs */
 }
 
 /* Basic Reset */
@@ -31,7 +28,7 @@ body {
 
 /* Navigation Header */
 nav {
-    background-color: var(--dark-color);
+    background-color: var(--secondary-color);
     padding: 15px;
     text-align: center;
     position: sticky;
@@ -67,9 +64,23 @@ nav {
 /* Hero Section */
 header {
     text-align: center;
-    padding: 50px 0;
-    background: url('solarpunk-background.jpg') no-repeat center center/cover;
+    padding: 30px 0;
     color: var(--secondary-color);
+}
+
+/* Round Speaker Image */
+.speaker-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.speaker-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image round */
+    border: 5px solid var(--primary-color);
+    object-fit: cover;
 }
 
 header h1 {
@@ -89,46 +100,60 @@ header p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Alternating Text Alignment */
+.left-aligned {
+    text-align: left;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
 /* Organic Themed Sections */
 .themes-topics {
-    background-color: var(--light-color);
+    background-color: var(--primary-color); /* Cool Teal Background */
     margin-bottom: 40px;
     padding: 60px 20px;
     text-align: center;
+    color: white;
 }
 
 .themes-talks {
-    background-color: var(--bg-color);
+    background-color: var(--secondary-color); /* Warm Gold Background */
     margin-bottom: 40px;
     padding: 60px 20px;
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 .themes-workshops {
-    background-color: var(--light-color);
+    background-color: var(--primary-color); /* Cool Teal Background */
     margin-bottom: 40px;
     padding: 60px 20px;
     text-align: center;
+    color: white;
 }
 
 .themes-recognition {
-    background-color: var(--section-color);
+    background-color: var(--secondary-color); /* Warm Gold Background */
     margin-bottom: 40px;
     padding: 60px 20px;
     text-align: center;
+    color: white;
 }
 
 .themes-contact {
-    background-color: var(--light-color);
+    background-color: var(--primary-color); /* Cool Teal Background */
     padding: 60px 20px;
     text-align: center;
+    color: white;
 }
 
 /* Content Compartment Styling */
 .content h2 {
     font-size: 2.5em;
-    color: var(--secondary-color);
+    color: white;
     margin-bottom: 30px;
 }
 
@@ -140,7 +165,7 @@ header p {
 
 .section-content strong {
     font-weight: bold;
-    color: var(--secondary-color);
+    color: white;
 }
 
 /* Video Container and Overlay in Talks Section */
@@ -195,6 +220,6 @@ iframe {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: var(--dark-color);
+    background-color: var(--secondary-color);
     color: white;
 }
