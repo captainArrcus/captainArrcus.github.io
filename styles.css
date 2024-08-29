@@ -10,6 +10,11 @@ html {
     --accent-color: #2aa199;
     --text-color: #586e75;
     --secondary-text-color: #073642;
+    --section-topics-bg: #d9f1e3;
+    --section-talks-bg: #f2e3d9;
+    --section-workshops-bg: #e3e9f2;
+    --section-recognition-bg: #f2f0e3;
+    --section-contact-bg: #e9f2ee;
 }
 
 /* Basic Reset */
@@ -59,7 +64,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: var(--bg-color);
+    color: var(--accent-color);
 }
 
 /* Hero Section */
@@ -79,13 +84,51 @@ header p {
     font-size: 1.2em;
 }
 
-/* Topics Section */
-.topics-section {
-    background-color: #e7f5e6; /* Light green for distinction */
+/* Distinct Themed Sections */
+.themes-topics {
+    background-color: var(--section-topics-bg);
+    padding: 40px 20px;
+    border-radius: 8px;
 }
 
-.topics-section h2 {
-    color: #2e7d32; /* Dark green for the title */
+.themes-talks {
+    background-color: var(--section-talks-bg);
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.themes-workshops {
+    background-color: var(--section-workshops-bg);
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.themes-recognition {
+    background-color: var(--section-recognition-bg);
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.themes-contact {
+    background-color: var(--section-contact-bg);
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+/* Content Compartment Styling */
+.content {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.compartment {
+    margin-bottom: 40px;
 }
 
 .item-box {
@@ -107,56 +150,8 @@ header p {
     color: var(--bg-color);
 }
 
-/* Talks Section */
-.talks-section {
-    background-color: #fff3e0; /* Light orange for distinction */
-}
-
-.talks-section h2 {
-    color: #e65100; /* Darker orange for the title */
-}
-
-.video-box {
-    margin-top: 30px;
-    background-color: #003d5c;  /* Dark blue background for video box*/
-    padding: 20px;
-    border-radius: 8px;
-    color: white;
-}
-
-.video-box h3 {
-    margin-bottom: 20px;
-    font-size: 1.5em;
-}
-
-/* Workshops Section */
-.workshops-section {
-    background-color: #e0e0e0; /* Light grey for distinction */
-}
-
-.workshops-section h2 {
-    color: #424242; /* Dark grey for the title */
-}
-
-.item-box {
-    background: var(--secondary-text-color);
-    border-radius: 8px;
-    padding: 20px;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-/* Recognition Section */
-.recognition-section {
-    background-color: #e7edee; /* Pale light blue for distinction */
-}
-
-.recognition-section h2 {
-    color: #0d47a1; /* Dark blue for the title */
-}
-
-.recognition-section .prize-box {
+/* Prize Compartment */
+.prize-box {
     background: white;
     border: 2px solid var(--accent-color);
     border-radius: 8px;
@@ -175,15 +170,7 @@ header p {
 }
 
 /* Contact Section */
-.contact-section {
-    background-color: #fbe9e7; /* Very pale red for distinction */
-}
-
-.contact-section h2 {
-    color: #d32f2f; /* Brighter red for the title */
-}
-
-.contact-section p {
+#contact p {
     font-size: 1.2em;
     color: var(--secondary-text-color);
 }
