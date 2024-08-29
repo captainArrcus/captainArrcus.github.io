@@ -1,61 +1,143 @@
+/* Solar Punk Color Theme */
+:root {
+    --bg-color: #fdf6e3;
+    --primary-color: #b58900;
+    --accent-color: #2aa199;
+    --text-color: #586e75;
+    --secondary-text-color: #073642;
+}
+
+/* Basic Reset */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
 body {
-    color: #2A3A98; /* Dark shade for texts */
-    background-color: #FDF6E3; /* Solar-punk light background */
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-}
-
-.header {
-    background-color: #B58900; /* Sun yellow for header */
-    padding: 20px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-.header p {
-    font-size: 1.2em;
-    margin-top: 5px;
-    color: #FDF6E3; /* Light text under header to match background */
-}
-
-.main-content {
-    padding: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.section {
-    background-color: #2AA198; /* Teal-green section background */
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
-    flex-basis: calc(50% - 40px); /* Adjust width for 2 columns */
-    color: #FDF6E3; /* Light color for text */
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-}
-
-.section h2 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-}
-
-.section p {
+    background-color: var(--bg-color);
+    color: var(--text-color);
     line-height: 1.6;
+    padding: 20px;
 }
 
-.award-section {
-    margin: 40px auto;
-    padding: 20px;
-    max-width: 600px;
+/* Navigation Header */
+nav {
+    background-color: var(--primary-color);
+    padding: 15px;
     text-align: center;
-    background-color: #B58900;
-    color: #FDF6E3;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--bg-color);
+}
+
+/* Hero Section */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background: url('solarpunk-background.jpg') no-repeat center center/cover;
+    color: var(--primary-color);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Content Compartment Styling */
+.content {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.compartment {
+    margin-bottom: 40px;
+}
+
+.item-box {
+    background: var(--accent-color);
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.compartment h3 {
+    font-size: 1.5em;
+    color: var(--bg-color);
+}
+
+.compartment p {
+    margin-top: 10px;
+    color: var(--bg-color);
+}
+
+/* Prize Compartment */
+.prize-box {
+    background: white;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prize-box h3 {
+    font-size: 1.5em;
+    color: var(--accent-color);
+}
+
+.prize-box p {
+    margin-top: 10px;
+    color: var(--secondary-text-color);
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.2em;
+    color: var(--secondary-text-color);
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--primary-color);
+    color: white;
 }

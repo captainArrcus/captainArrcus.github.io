@@ -5,122 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcus Röper - AI Expert & Innovator</title>
-    <style>
-        /* Solar Punk Color Theme */
-        :root {
-            --bg-color: #fdf6e3;
-            --primary-color: #b58900;
-            --accent-color: #2aa199;
-            --text-color: #586e75;
-            --secondary-text-color: #073642;
-        }
-
-        /* Basic Reset */
-        body, h1, h2, h3, p {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Body Styling */
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            padding: 20px;
-        }
-
-        /* Header Styling */
-        header {
-            text-align: center;
-            padding: 50px 0;
-            background: url('solarpunk-background.jpg') no-repeat center center/cover;
-            color: var(--primary-color);
-        }
-
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.2em;
-        }
-
-        /* Content Compartment Styling */
-        .content {
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .content h2 {
-            font-size: 2em;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-
-        .compartment {
-            margin-bottom: 40px;
-        }
-
-        .item-box {
-            background: var(--accent-color);
-            border-radius: 8px;
-            padding: 20px;
-            color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
-        .compartment h3 {
-            font-size: 1.5em;
-            color: var(--bg-color);
-        }
-
-        .compartment p {
-            margin-top: 10px;
-            color: var(--bg-color);
-        }
-
-        /* Prize Compartment */
-        .prize-box {
-            background: white;
-            border: 2px solid var(--accent-color);
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .prize-box h3 {
-            font-size: 1.5em;
-            color: var(--accent-color);
-        }
-
-        .prize-box p {
-            margin-top: 10px;
-            color: var(--secondary-text-color);
-        }
-
-        /* Footer Styling */
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: var(--primary-color);
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- Header Section -->
+    <!-- Navigation Header -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#topics">Topics</a></li>
+            <li><a href="#talks">Talks</a></li>
+            <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#recognition">Recognition</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
     <header>
         <h1>Marcus Röper</h1>
         <p>AI Expert | Innovator | Visionary of Sustainable Tech</p>
     </header>
 
     <!-- Topics Section -->
-    <section class="content compartment">
+    <section id="topics" class="content compartment">
         <h2>Topics</h2>
         <div class="item-box">
             <h3>LLM-Agents</h3>
@@ -145,7 +53,7 @@
     </section>
 
     <!-- Talks Section -->
-    <section class="content compartment">
+    <section id="talks" class="content compartment">
         <h2>Talks</h2>
         <div class="item-box">
             <h3>Beyond the Algorithms: AI's Role in Sustainable Development</h3>
@@ -162,7 +70,7 @@
     </section>
 
     <!-- Workshops Section -->
-    <section class="content compartment">
+    <section id="workshops" class="content compartment">
         <h2>Workshops</h2>
         <div class="item-box">
             <h3>Building LLM-Agents From Scratch</h3>
@@ -178,20 +86,8 @@
         </div>
     </section>
 
-    <!-- Prize Section -->
-    <section class="content compartment">
+    <!-- Recognition Section -->
+    <section id="recognition" class="content compartment">
         <h2>Recognition</h2>
         <div class="prize-box">
-            <h3>Winner of the 2022 Solar Punk Innovations Award</h3>
-            <p>For outstanding contributions to the field of sustainable AI and green technology.</p>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>© 2023 Marcus Röper | AI Expert & Innovator | All Rights Reserved</p>
-    </footer>
-
-</body>
-
-</html>
+            <h3>Winner of the 2022 Solar Punk Innovations Award</h
