@@ -9,7 +9,9 @@ html {
     --primary-color: #2AA199;
     --secondary-color: #B58900;
     --text-color: #586e75;
-    --section-color-light: #fdf9e3;
+    --light-color: #FAF3E2;
+    --dark-color: #00695C;
+    --section-color: #B58900;
 }
 
 /* Basic Reset */
@@ -29,7 +31,7 @@ body {
 
 /* Navigation Header */
 nav {
-    background-color: var(--secondary-color);
+    background-color: var(--dark-color);
     padding: 15px;
     text-align: center;
     position: sticky;
@@ -79,53 +81,59 @@ header p {
     font-size: 1.2em;
 }
 
+/* Rounded Section Containers */
+.rounded-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Organic Themed Sections */
 .themes-topics {
-    background-color: var(--section-color-light);
+    background-color: var(--light-color);
+    margin-bottom: 40px;
     padding: 60px 20px;
-    color: var(--text-color);
+    text-align: center;
 }
 
 .themes-talks {
     background-color: var(--bg-color);
+    margin-bottom: 40px;
     padding: 60px 20px;
-    color: var(--text-color);
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    justify-content: center;
 }
 
 .themes-workshops {
-    background-color: var(--section-color-light);
+    background-color: var(--light-color);
+    margin-bottom: 40px;
     padding: 60px 20px;
-    color: var(--text-color);
-}
-
-.themes-recognition {
-    background-color: var(--primary-color);
-    padding: 60px 20px;
-    color: white;
-}
-
-.themes-contact {
-    background-color: var(--section-color-light);
-    padding: 60px 20px;
-    color: var(--text-color);
-}
-
-/* Content Compartment Styling */
-.content {
     text-align: center;
 }
 
-h2 {
+.themes-recognition {
+    background-color: var(--section-color);
+    margin-bottom: 40px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.themes-contact {
+    background-color: var(--light-color);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Content Compartment Styling */
+.content h2 {
     font-size: 2.5em;
     color: var(--secondary-color);
     margin-bottom: 30px;
 }
 
 .section-content p {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-size: 1.2em;
     line-height: 1.7;
 }
@@ -154,12 +162,17 @@ h2 {
 
 .video-overlay {
     position: relative;
-    max-width: 540px;
+    max-width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .video-overlay img {
     width: 100%;
+    height: auto;
     display: block;
+    border-radius: 20px;
 }
 
 iframe {
@@ -170,6 +183,7 @@ iframe {
     height: 100%;
     opacity: 0;
     transition: opacity 0.5s;
+    border-radius: 20px;
 }
 
 .video-overlay:hover iframe,
@@ -181,6 +195,6 @@ iframe {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: var(--secondary-color);
+    background-color: var(--dark-color);
     color: white;
 }
