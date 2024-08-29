@@ -10,11 +10,6 @@ html {
     --accent-color: #2aa199;
     --text-color: #586e75;
     --secondary-text-color: #073642;
-    --section-topics-bg: #d9f1e3;
-    --section-talks-bg: #f2e3d9;
-    --section-workshops-bg: #e3e9f2;
-    --section-recognition-bg: #f2f0e3;
-    --section-contact-bg: #e9f2ee;
 }
 
 /* Basic Reset */
@@ -84,95 +79,68 @@ header p {
     font-size: 1.2em;
 }
 
-/* Distinct Themed Sections */
+/* Organic Themed Sections */
 .themes-topics {
-    background-color: var(--section-topics-bg);
-    padding: 40px 20px;
-    border-radius: 8px;
+    background: linear-gradient(135deg, #d9f1e3 0%, transparent 100%);
+    padding: 60px 20px;
+    color: var(--text-color);
 }
 
 .themes-talks {
-    background-color: var(--section-talks-bg);
-    padding: 40px 20px;
-    border-radius: 8px;
+    background: linear-gradient(135deg, #f2e3d9 0%, transparent 100%);
+    padding: 60px 20px;
+    color: var(--secondary-text-color);
 }
 
 .themes-workshops {
-    background-color: var(--section-workshops-bg);
-    padding: 40px 20px;
-    border-radius: 8px;
+    background: linear-gradient(135deg, #e3e9f2 0%, transparent 100%);
+    padding: 60px 20px;
+    color: var(--text-color);
 }
 
 .themes-recognition {
-    background-color: var(--section-recognition-bg);
-    padding: 40px 20px;
-    border-radius: 8px;
+    background: linear-gradient(135deg, #f2f0e3 0%, transparent 100%);
+    padding: 60px 20px;
+    color: var(--secondary-text-color);
 }
 
 .themes-contact {
-    background-color: var(--section-contact-bg);
-    padding: 40px 20px;
-    border-radius: 8px;
+    background: linear-gradient(135deg, #e9f2ee 0%, transparent 100%);
+    padding: 60px 20px;
+    color: var(--text-color);
 }
 
 /* Content Compartment Styling */
 .content {
-    padding: 20px 0;
     text-align: center;
 }
 
-.content h2 {
-    font-size: 2em;
+h2 {
+    font-size: 2.5em;
     color: var(--primary-color);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.compartment {
-    margin-bottom: 40px;
+.section-content p {
+    margin-bottom: 25px; /* Add space between paragraphs */
+    font-size: 1.1em;
+    line-height: 1.7;
 }
 
-.item-box {
-    background: var(--accent-color);
-    border-radius: 8px;
-    padding: 20px;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.compartment h3 {
-    font-size: 1.5em;
-    color: var(--bg-color);
-}
-
-.compartment p {
-    margin-top: 10px;
-    color: var(--bg-color);
-}
-
-/* Prize Compartment */
-.prize-box {
-    background: white;
-    border: 2px solid var(--accent-color);
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.prize-box h3 {
-    font-size: 1.5em;
-    color: var(--accent-color);
-}
-
-.prize-box p {
-    margin-top: 10px;
-    color: var(--secondary-text-color);
+.section-content strong {
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
 /* Contact Section */
 #contact p {
     font-size: 1.2em;
     color: var(--secondary-text-color);
+}
+
+/* Video Wrapper in Talks Section */
+.video-wrapper {
+    margin-top: 30px;
 }
 
 /* Footer Section */
