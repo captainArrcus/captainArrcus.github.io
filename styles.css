@@ -1,203 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap');
-
-:root {
-    --background: rgb(253, 246, 227);
-    --accent: rgb(181, 137, 0);
-    --primary: rgb(42, 161, 152);
-    --text-dark: rgb(101, 123, 131);
-    --text-light: rgb(253, 246, 227);
-    --secondary: rgb(38, 139, 210);
-}
-
 body {
-    font-family: 'Space Grotesk', sans-serif;
-    line-height: 1.6;
-    color: var(--text-dark);
+    color: #2A3A98; /* Dark shade for texts */
+    background-color: #FDF6E3; /* Solar-punk light background */
     margin: 0;
-    padding: 0;
-    background-color: var(--background);
+    font-family: 'Arial', sans-serif;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+.header {
+    background-color: #B58900; /* Sun yellow for header */
     padding: 20px;
-}
-
-header {
-    background: var(--primary);
-    color: var(--text-light);
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: var(--accent) 3px solid;
-}
-
-header a {
-    color: var(--text-light);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-header .highlight, header .current a {
-    color: var(--accent);
-    font-weight: bold;
-}
-
-header a:hover {
-    color: var(--background);
-    font-weight: bold;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-container h1 {
-    margin: 0;
-    color: var(--text-light); /* Ensures the text color is light */
-    font-size: 24px;
-    white-space: nowrap; /* Prevents the name from breaking into two lines */
-}
-
-.site-name {
-    color: var(--accent); /* Applies the accent color to the site name */
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    margin-left: 20px; /* Adjust the spacing as needed */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--text-light); /* Ensures the links have the correct color */
-}
-
-#showcase {
-    min-height: 400px;
-    background: linear-gradient(rgba(42, 161, 152, 0.8), rgba(42, 161, 152, 0.8)), url('/api/placeholder/1200/400') no-repeat center center/cover;
     text-align: center;
-    color: var(--text-light);
+    color: #ffffff;
 }
 
-#showcase h1 {
-    margin-top: 100px;
-    font-size: 55px;
-    margin-bottom: 10px;
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-#showcase p {
-    font-size: 20px;
+.header p {
+    font-size: 1.2em;
+    margin-top: 5px;
+    color: #FDF6E3; /* Light text under header to match background */
 }
 
-.button {
-    display: inline-block;
-    font-size: 18px;
-    color: var(--text-light);
-    background: var(--accent);
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: var(--secondary);
-    color: var(--text-light);
-}
-
-#boxes {
-    margin-top: 20px;
-}
-
-#boxes .box {
-    float: left;
-    width: 30%;
-    padding: 10px;
-    text-align: center;
+.main-content {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .section {
-    padding: 20px 0;
-    background: rgba(253, 246, 227, 0.7);
-    margin: 20px 0;
-    box-shadow: 0 0 10px rgba(42, 161, 152, 0.1);
+    background-color: #2AA198; /* Teal-green section background */
+    padding: 20px;
     border-radius: 10px;
+    margin: 10px;
+    flex-basis: calc(50% - 40px); /* Adjust width for 2 columns */
+    color: #FDF6E3; /* Light color for text */
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
 }
 
 .section h2 {
-    color: var(--primary);
+    font-size: 1.8em;
+    margin-bottom: 15px;
 }
 
-.talk, .workshop {
-    margin-bottom: 20px;
-    padding: 10px;
-    background: rgba(253, 246, 227, 0.9);
-    border-left: 5px solid var(--accent);
+.section p {
+    line-height: 1.6;
 }
 
-#prize {
-    background: var(--accent);
-    color: var(--text-light);
+.award-section {
+    margin: 40px auto;
     padding: 20px;
+    max-width: 600px;
     text-align: center;
-    margin-top: 20px;
+    background-color: #B58900;
+    color: #FDF6E3;
     border-radius: 10px;
-}
-
-footer {
-    padding: 20px;
-    margin-top: 20px;
-    color: var(--text-light);
-    background-color: var(--primary);
-    text-align: center;
-}
-
-/* Solar punk inspired icons */
-.icon-leaf, .icon-globe, .icon-sprout {
-    font-size: 48px;
-    color: var(--primary);
-}
-
-.icon-leaf::before {
-    content: '🍃';
-}
-
-.icon-globe::before {
-    content: '🌍';
-}
-
-.icon-sprout::before {
-    content: '🌱';
-}
-
-@media(max-width: 768px) {
-    header #branding,
-    header nav,
-    header nav li,
-    #boxes .box {
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
-
-    header {
-        padding-bottom: 20px;
-    }
-
-    #showcase h1 {
-        font-size: 40px;
-    }
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
 }
