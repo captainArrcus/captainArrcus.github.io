@@ -41,23 +41,18 @@
 
     <!-- Talks Section -->
     <section id="talks" class="content compartment themes-talks">
-        <div class="section-content">
-            <h2>Talks</h2>
-            <div class="talks-content-wrapper">
-                <div class="talk-text">
-                    <p><strong>Beyond the Algorithms:</strong> AI's Role in Sustainable Development. Delve into the impact of AI on global sustainability efforts.</p>
-                    <p><strong>Quantum Computing and Its Role in Future Tech:</strong> Exploring the intersections of quantum computing and machine learning.</p>
-                    <p><strong>Thinking Green:</strong> AI Solutions for a Sustainable World. How AI can be a powerful ally in the fight against climate change.</p>
-                    <p><strong>Künstliche Intelligenz in der Kunst:</strong> Future of AI: A Political Strategy in Art and Education.</p>
-                </div>
-                <div class="talk-video-wrapper">
-                    <div class="video-thumbnail">
-                        <img src="https://mediathek.hkw.de/magnoliaPublic/.imaging/mte/hkw-mediathek-fe/large/dam/hkw-mediathek/Bilder/K/K%C3%BCnstliche-Intelligenz-in-der-Kunst-%E2%80%93-Eine-Strategie-der-politischen-Bildung-(Thumbnail)/jcr:content/96195.jpeg" alt="Video Thumbnail">
-                        <div class="video-overlay">
-                            <button id="play-button">▶️ Play Video</button>
-                        </div>
-                    </div>
-                    <iframe id="talk-video" src="https://mediathek.hkw.de/en/embed/62cd53706b85ee4eb6f75dcf" width="300" height="170" frameborder="0" allowfullscreen style="display:none;"></iframe>
+        <div class="section-outer">
+            <div class="section-inner">
+                <h2>Talks</h2>
+                <p><strong>Beyond the Algorithms:</strong> AI's Role in Sustainable Development. Delve into the impact of AI on global sustainability efforts.</p>
+                <p><strong>Quantum Computing and Its Role in Future Tech:</strong> Exploring the intersections of quantum computing and machine learning.</p>
+                <p><strong>Thinking Green:</strong> AI Solutions for a Sustainable World. How AI can be a powerful ally in the fight against climate change.</p>
+                <p><strong>Künstliche Intelligenz in der Kunst:</strong> Future of AI: A Political Strategy in Art and Education.</p>
+            </div>
+            <div class="video-container">
+                <div class="video-overlay">
+                    <img src="https://mediathek.hkw.de/magnoliaPublic/.imaging/mte/hkw-mediathek-fe/large/dam/hkw-mediathek/Bilder/K/K%C3%BCnstliche-Intelligenz-in-der-Kunst-%E2%80%93-Eine-Strategie-der-politischen-Bildung-(Thumbnail)/jcr:content/96195.jpeg" alt="Talks Thumbnail">
+                    <iframe src="https://mediathek.hkw.de/en/embed/62cd53706b85ee4eb6f75dcf" width="540" height="304" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -93,14 +88,6 @@
     <footer>
         <p>© 2023 Marcus Röper | AI Expert & Innovator | All Rights Reserved</p>
     </footer>
-
-    <script>
-        // JavaScript to toggle video display
-        document.getElementById('play-button').addEventListener('click', function() {
-            document.querySelector('.video-thumbnail').style.display = 'none';
-            document.getElementById('talk-video').style.display = 'block';
-        });
-    </script>
 
 </body>
 

@@ -8,12 +8,8 @@ html {
     --bg-color: #FDF6E3;
     --primary-color: #2AA199;
     --secondary-color: #B58900;
-    --accent-color-1: #D9C072;
-    --accent-color-2: #70954D;
-    --accent-color-3: #A12A32;
-    --accent-color-4: #002CB5;
     --text-color: #586e75;
-    --title-color: #2AA199;
+    --section-color-light: #fdf9e3;
 }
 
 /* Basic Reset */
@@ -33,7 +29,7 @@ body {
 
 /* Navigation Header */
 nav {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     padding: 15px;
     text-align: center;
     position: sticky;
@@ -42,12 +38,18 @@ nav {
 }
 
 .nav-links {
+    display: inline-flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
 }
 
 .nav-links a {
@@ -57,7 +59,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 /* Hero Section */
@@ -65,7 +67,7 @@ header {
     text-align: center;
     padding: 50px 0;
     background: url('solarpunk-background.jpg') no-repeat center center/cover;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 header h1 {
@@ -77,34 +79,37 @@ header p {
     font-size: 1.2em;
 }
 
-/* Solid Themed Sections */
+/* Organic Themed Sections */
 .themes-topics {
-    background-color: var(--accent-color-2);
-    padding: 40px 20px;
-    color: var(--bg-color);
-}
-
-.themes-talks {
-    background-color: var(--accent-color-1);
-    padding: 40px 20px;
+    background-color: var(--section-color-light);
+    padding: 60px 20px;
     color: var(--text-color);
 }
 
+.themes-talks {
+    background-color: var(--bg-color);
+    padding: 60px 20px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
 .themes-workshops {
-    background-color: var(--accent-color-3);
-    padding: 40px 20px;
-    color: var(--bg-color);
+    background-color: var(--section-color-light);
+    padding: 60px 20px;
+    color: var(--text-color);
 }
 
 .themes-recognition {
-    background-color: var(--accent-color-4);
-    padding: 40px 20px;
+    background-color: var(--primary-color);
+    padding: 60px 20px;
     color: white;
 }
 
 .themes-contact {
-    background-color: var(--bg-color);
-    padding: 40px 20px;
+    background-color: var(--section-color-light);
+    padding: 60px 20px;
     color: var(--text-color);
 }
 
@@ -113,21 +118,15 @@ header p {
     text-align: center;
 }
 
-.section-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 h2 {
     font-size: 2.5em;
-    color: var(--title-color);
+    color: var(--secondary-color);
     margin-bottom: 30px;
 }
 
 .section-content p {
-    margin-bottom: 20px; /* Add space between paragraphs */
-    font-size: 1.1em;
+    margin-bottom: 25px;
+    font-size: 1.2em;
     line-height: 1.7;
 }
 
@@ -136,59 +135,52 @@ h2 {
     color: var(--secondary-color);
 }
 
-/* Talks Section - Video Wrapper and Side-by-Side Layout */
-.talks-content-wrapper {
+/* Video Container and Overlay in Talks Section */
+.section-outer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-.talk-text {
-    margin-bottom: 20px;
-    text-align: left;
+.section-inner {
+    flex: 1;
+    padding-right: 20px;
 }
 
-.talk-video-wrapper {
-    position: relative;
-}
-
-.video-thumbnail {
-    position: relative;
-    width: 100%;
-    height: auto;
-    max-width: 540px;
-    border-radius: 10px;
-}
-
-.video-thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.video-container {
+    flex: 1;
 }
 
 .video-overlay {
+    position: relative;
+    max-width: 540px;
+}
+
+.video-overlay img {
+    width: 100%;
+    display: block;
+}
+
+iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
-#talk-video {
-    display: none;
-    border-radius: 10px;
+.video-overlay:hover iframe,
+.video-overlay:focus iframe {
+    opacity: 1;
 }
 
 /* Footer Section */
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
 }
