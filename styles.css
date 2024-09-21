@@ -207,7 +207,7 @@ h2 {
 }
 
 .full-width:hover h2 {
-    transform: scale(1.05); /* Slight zoom-in effect */
+    transform: scale(1.05) translate(0, -5%); /* Slight zoom-in effect */
 }
 
 /* Alternating Text Alignment */
