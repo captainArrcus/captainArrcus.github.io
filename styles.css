@@ -5,9 +5,10 @@ html {
 
 /* Solar Punk Color Theme */
 :root {
-    --bg-color: #FDF6E3;
-    --primary-color: #2AA199; /* Main, Cooler Accent */
+    --bg-color: #0B2927;
+    --primary-color: #0B2927; /* Main, Cooler Accent */
     --secondary-color: #B58900; /* Secondary, Warmer Accent */
+    --third-color: #2AA199; /* Third, Blue Accent */
     --text-color: #586e75; /* For general paragraphs */
     --text-alt-color: #FDF6E3; /* Alternate text color for better contrast */
 }
